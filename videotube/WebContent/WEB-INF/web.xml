@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>TTube</display-name>
+  <welcome-file-list>
+    <welcome-file>Login</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>TTube.aws.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Upload_video</display-name>
+    <servlet-name>Upload_video</servlet-name>
+    <servlet-class>TTube.aws.Upload_video</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Upload_video</servlet-name>
+    <url-pattern>/Upload_video</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>Reply</display-name>
+    <servlet-name>Reply</servlet-name>
+    <servlet-class>TTube.aws.Reply</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Reply</servlet-name>
+    <url-pattern>/Reply</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
